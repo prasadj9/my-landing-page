@@ -1,158 +1,171 @@
 .container {
-  background-image: linear-gradient(to top right, black 20%, #0F0F0F 40%, #0F0F0F00 90% );
+  background-image: linear-gradient(
+    to top right,
+    black 20%,
+    #0f0f0f 40%,
+    #0f0f0f00 90%
+  );
   background-color: #644715ad;
-    min-height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  min-height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family : 'DM Sans', sans-serif;
 }
 
 .navbar {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-  }
+  width: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 16px;
+}
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navLinks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    background-color: #0F0F0FA6;
-    color: #96979C;
-    gap: 20px;
-    padding: 10px;
-    border-radius: 50px;
-    list-style: none;
-  }
-  
-  .navLinks li {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .navLinks li:hover {
-    color: #f5b400;
-  }
-  
-  .activeLink {
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .contactButton:hover {
-    background: #f5b400;
-  }
-  
-  .heroSection {
-    margin-top: 20px;
-    // background-color: #96979C;
-    width: 90%;
-  }
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  .heroSection h1 {
-    font-size: 42px;
-    font-weight: bold;
-  }
-  
-  .highlight {
-    color: #D4A85D;
-  }
-  
-  .buttonGroup {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    // justify-content: center;
-  }
-  
-  .storeButton {
-    position: relative;
-    background: #1A1A1A;
-    padding: 18px 25px;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.5s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap : 10px;
-    background: 
-        linear-gradient(#1A1A1A, #1A1A1A) padding-box,
-        linear-gradient(60deg, #262626, #D4A85D) border-box;
-      color: white;
-      padding: 20px 35px;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      font-size: 28px;
-  }
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background-color: #0f0f0fa6;
+  color: #96979c;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  list-style: none;
+}
 
-  .storeButton:hover {
-    background: 
-        linear-gradient(#1A1A1A, #1A1A1A) padding-box, 
-        linear-gradient(60deg, #D4A85D, #262626) border-box;
-    // animation: moveGradient 3s linear infinite; 
-  }
+.navLinks li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
-  @keyframes moveGradient {
-    0% {
-      background-position: 100% 100%;
-    }
-    100% {
-      background-position: -100% -100%;
-    }
-  }
+.navLinks li:hover {
+  color: #f5b400;
+}
 
-  .imageContainer {
-    // margin-top: 40px;
-  }
-  
-  .appImage {
-    border-radius: 10px;
-    // box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-  }
+.activeLink {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-  .rainContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-    pointer-events: none;
-    background-image: linear-gradient(to top right, black 20%, #0F0F0F 40%, #0F0F0F00 90% );
-    background-color: #d4a85dad;
+.contactButton:hover {
+  background: #f5b400;
+}
+
+.heroSection {
+  margin-top: 20px;
+  // background-color: #96979C;
+  width: 90%;
+}
+
+.heroSection h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #d4a85d;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  // justify-content: center;
+}
+
+.storeButton {
+  position: relative;
+  background: #1a1a1a;
+  padding: 18px 25px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(60deg, #262626, #d4a85d) border-box;
+  color: white;
+  padding: 20px 35px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 28px;
+  // background: 
+  // linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+  // linear-gradient(90deg, 
+  //   #262626, 
+  //   #d4a85d, 
+  //   #262626, 
+  //   #d4a85d, 
+  //   #262626) border-box;
+background-size: 300% 100%;
+animation: moveGradient 7s linear infinite;
+}
+
+.storeButton:hover {
+  // background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+  //   linear-gradient(60deg, #d4a85d, #262626) border-box;
+  // animation: moveGradient 16s linear infinite;
+}
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.imageContainer {
+  // margin-top: 40px;
+}
+
+.appImage {
+  border-radius: 10px;
+  // box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.rainContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .raindrop {
-    position: absolute;
-    top: -10px;
-    background-color: rgba(191, 219, 254, 0.2);
-    border-radius: 50%;
-    animation-name: fall;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  position: absolute;
+  top: -10px;
+  background-color: rgba(191, 219, 254, 0.2);
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
+  to {
+    transform: translateY(100vh);
+  }
 }

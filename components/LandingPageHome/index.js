@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./Home.module.scss";
 import { useEffect, useState } from "react";
-export default function Home({count = 50}) {
+export default function Home({count = 100}) {
   const [raindrops, setRaindrops] = useState([]);
   
       useEffect(() => {
@@ -45,14 +45,17 @@ export default function Home({count = 50}) {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          justifyContent: "spaceBetween",
+          justifyContent: "center",
+          position : "relative",
+          width : "100%",
+          marginTop : "1rem"
         }}
       >
-        <div className={styles.logo}>
+        <div className={styles.logo} style={{position : "absolute", left : "40px"}} >
           <Image
             alt="Mobile img"
-            width={140}
-            height={70}
+            width={120}
+            height={60}
             className={styles.appImage}
             src="/image 2.png"
           />
@@ -74,13 +77,14 @@ export default function Home({count = 50}) {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
+          gap : "2rem",
+          justifyContent: "space-around",
         }}
         className={styles.heroSection}
       >
         <div>
-          <p style={{ fontSize: "4rem", letterSpacing : "2%", fontFamily : "Montserrat", fontWeight : "600", lineHeight : "120%" }}>Building India's First </p>
-          <p style={{ fontSize: "4rem", letterSpacing : "2px", fontFamily : "Montserrat", fontWeight : "bolder"}} className={styles.highlight}>
+          <p style={{ fontSize: "3.5rem", fontFamily : "Montserrat", fontWeight : "500", lineHeight : "120%" }}>Building India's First </p>
+          <p style={{ fontSize: "3.5rem", fontFamily : "Montserrat", fontWeight : "500", lineHeight : "120%"}} className={styles.highlight}>
             {" "}
             Rent credit score{" "}
           </p>
@@ -118,7 +122,7 @@ export default function Home({count = 50}) {
         </div>
 
         <div className={styles.imageContainer}>
-          <div style={{ position: "relative" }}>
+          <div style={{ position: "relative", top : "-10px" }}>
             <Image
               alt="Mobile img"
               width={400}

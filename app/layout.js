@@ -1,11 +1,16 @@
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"], // Choose the character subsets you need
-  weight: ["400", "700"], // Specify font weights
+  weight: ["400", "500", "600", "700"], // Specify font weights
   variable: "--font-montserrat", // Define a CSS variable
   display: "swap",
+});
+
+const dmSans = DM_Sans({
+  weight: ['400', '500', '700'], // Set the weights you want
+  subsets: ['latin'], // Specify subsets (optional)
 });
 
 const geistSans = Geist({
